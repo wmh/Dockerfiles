@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER Hunter Wu <hunter.wu@gmail.com>
+LABEL maintainer="hunter.wu@gmail.com"
 
 RUN apt update -y \
     && apt install -y apache2 php5 php5-apcu php5-curl php5-gd php5-gmp php5-mcrypt \
