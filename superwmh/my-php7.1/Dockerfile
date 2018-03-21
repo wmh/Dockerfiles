@@ -3,7 +3,7 @@ LABEL maintainer="hunter.wu@gmail.com"
 
 RUN apt update -y \
     && apt upgrade -y \
-    && apt install -y php7.1-gmp \
+    && apt install -y php7.1-gmp php7.1-bc \
     && a2enmod rewrite \
     && sed -i 's/Listen 8080/Listen 80/' /etc/apache2/ports.conf \
     && sed -i 's/variables_order = "GPCS/variables_order = "EGPCS/' /etc/php/7.1/apache2/php.ini \
