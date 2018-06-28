@@ -9,7 +9,7 @@ docker build -t myjenkins ./
 ```
 docker run \
   -u root \
-  --rm \
+  --restart unless-stopped \
   -d \
   -p 8070:8080 \
   -p 50000:50000 \
