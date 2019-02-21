@@ -1,6 +1,8 @@
 FROM 1and1internet/ubuntu-16-apache-php-7.1
 LABEL maintainer="hunter.wu@gmail.com"
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt update -y \
     && apt upgrade -y \
     && apt install -y php7.1-gmp php7.1-bc \
